@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+	var a, b_b int                       //want "var b_b in snake case"
+	c_c, d_d := 1, 2                     //want "var c_c in snake case" "var d_d in snake case"
+	for _, j_j := range []int{1, 2, 3} { //want "var j_j in snake case"
+		fmt.Println(j_j)
+	}
+	fmt.Println(a, b_b, c_c, d_d)
+
+}
+func okArgs(a, b int) {} //want "fn ok_args in snake case"
+
+func badAgrs(a, b, d, c int) {} //want "fn badAgrs has more than 3 params"
