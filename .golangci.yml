@@ -1,0 +1,14 @@
+version: "2"
+
+linters:
+  default: none
+  enable:
+    - analyzer # имя линтера
+
+  settings: # обратите внимание: settings на одном уровне с default
+    custom:
+      analyzer: # то же имя, что и в enable
+        type: "module"
+        description: "Мой первый линтер"
+        settings:
+          message: "Привет, мир!"
